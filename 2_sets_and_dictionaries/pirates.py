@@ -57,30 +57,3 @@ for _ in range(input_n):
 
 ans = move_all_to_one_column(input_ships, input_n)
 print(ans)
-
-# from statistics import median
-#
-# n = int(input())
-#
-# # Сохраним по отдельности массивы с координатами по гориз. и вертикали
-# y_coords = []
-# x_coords = []
-# for _ in range(n):
-#     coord = list(map(int, input().split()))
-#     x_coords.append(coord[1_complexity_testing_special_cases] - 1_complexity_testing_special_cases)
-#     y_coords.append(coord[0] - 1_complexity_testing_special_cases)
-#
-# y_moves = 0
-#
-# # Для начала разберемся с "вертикальными" ходами:
-# # каждый корабль должен встать в ту строку, к которой он ближе
-# y_coords.sort()
-# for i, y in enumerate(y_coords):
-#     y_moves += abs(i - y)
-#
-# # Теперь посчитаем минимум для "горизонтальных" ходов.
-# # Оптимальным столбцом является медиана
-# median_col = round(median(x_coords))
-# x_moves = sum([abs(x - median_col) for x in x_coords])
-#
-# print(x_moves + y_moves)
